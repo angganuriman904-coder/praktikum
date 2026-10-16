@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Toko Baju - Angga Fashion</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+
+            /* BACKGROUND TEMA BAJU */
+            background:
+                linear-gradient(135deg,
+                rgba(255,255,255,0.90),
+                rgba(235,235,235,0.90)),
+                repeating-linear-gradient(
+                    45deg,
+                    #eeeeee 0px,
+                    #eeeeee 25px,
+                    #dddddd 25px,
+                    #dddddd 50px
+                );
+
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        /* LOGO */
+        .logo {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .logo svg {
+            width: 150px;
+            height: 150px;
+        }
+
+        /* NAVIGASI */
+        nav {
+            text-align: center;
+            margin: 15px 0 35px;
+        }
+
+        nav a {
+            color: #222;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 5px;
+        }
+
+        /* JUDUL */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .slogan {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #999;
+            margin: 25px 0;
+        }
+
+        /* DESKRIPSI */
+        .deskripsi {
+            font-size: 20px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        /* JUDUL BAGIAN */
+        h2 {
+            font-size: 30px;
+            margin-top: 35px;
+        }
+
+        /* PRODUK */
+        ul {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .produk {
+            margin-left: 10px;
+        }
+
+        /* JADWAL */
+        .jadwal {
+            font-size: 19px;
+            line-height: 1.8;
+            background: rgba(255,255,255,0.55);
+            padding: 15px 20px;
+            border-radius: 12px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            padding: 20px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        /* JAM REALTIME */
+        #waktu {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* RESPONSIVE HP */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .deskripsi {
+                font-size: 18px;
+            }
+
+            .slogan {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= LOGO ================= -->
+    <div class="logo">
+
+        <!-- LOGO BAJU -->
+        <svg viewBox="0 0 300 300"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Lingkaran -->
+            <circle cx="150" cy="150" r="125"
+                    fill="#222"/>
+
+            <!-- Baju -->
+            <path d="
+                M105 75
+                L75 95
+                L40 125
+                L70 165
+                L95 145
+                L95 230
+                L205 230
+                L205 145
+                L230 165
+                L260 125
+                L225 95
+                L195 75
+                L175 100
+                L150 110
+                L125 100
+                Z"
+                fill="white"/>
+
+            <!-- Kerah -->
+            <path d="
+                M125 75
+                Q150 105 175 75
+                L165 65
+                Q150 85 135 65
+                Z"
+                fill="#222"/>
+
+            <!-- Garis desain -->
+            <line x1="115" y1="150"
+                  x2="185" y2="150"
+                  stroke="#222"
+                  stroke-width="8"/>
+
+            <line x1="115" y1="170"
+                  x2="185" y2="170"
+                  stroke="#222"
+                  stroke-width="8"/>
+
+        </svg>
+
+    </div>
+
+
+    <!-- ================= NAVIGASI ================= -->
+    <nav>
+        <a href="menu.html">Beranda</a> |
+        <a href="jadwal.html">Jadwal Operasional</a>
+    </nav>
+
+
+    <!-- ================= BERANDA ================= -->
+    <section id="beranda">
+
+        <h1>
+            Selamat Datang di<br>
+            Angga Fashion
+        </h1>
+
+        <p class="slogan">
+            "Gaya keren, nyaman dipakai,<br>
+            percaya diri setiap hari."
+        </p>
+
+        <hr>
+
+        <p class="deskripsi">
+            Angga Fashion didirikan sejak tahun 2026
+            untuk menyediakan berbagai macam pakaian
+            dengan desain kekinian dan nyaman digunakan.
+            Kami berkomitmen menyediakan pakaian
+            berkualitas dengan <b>harga yang terjangkau</b>
+            untuk pelajar maupun masyarakat umum.
+        </p>
+
+        <!-- ================= PRODUK ================= -->
+
+        <h2>
+            Koleksi Favorit Kami
+        </h2>
+
+        <ul class="produk">
+
+            <li>
+                <b>Atasan</b>
+                <ul>
+                    <li>Kaos Oversize</li>
+                    <li>Kemeja Casual</li>
+                    <li>Hoodie</li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Bawahan</b>
+                <ul>
+                    <li>Celana Cargo</li>
+                    <li>Jeans</li>
+                    <li>Celana Training</li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Fashion Item</b>
+                <ul>
+                    <li>Topi</li>
+                    <li>Tas Selempang</li>
+                    <li>Jaket</li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+     <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Created by Angga Nuriman @2026
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

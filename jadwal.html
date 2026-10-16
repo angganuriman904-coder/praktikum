@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jadwal Operasional - Angga Fashion</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+
+            /* BACKGROUND SAMA SEPERTI HALAMAN SEBELUMNYA */
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.90),
+                    rgba(235,235,235,0.90)
+                ),
+                repeating-linear-gradient(
+                    45deg,
+                    #eeeeee 0px,
+                    #eeeeee 25px,
+                    #dddddd 25px,
+                    #dddddd 50px
+                );
+
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        /* ================= LOGO ================= */
+
+        .logo {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .logo svg {
+            width: 150px;
+            height: 150px;
+        }
+
+        /* ================= NAVIGASI ================= */
+
+        nav {
+            text-align: center;
+            margin: 15px 0 35px;
+        }
+
+        nav a {
+            color: #222;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 5px;
+        }
+
+        /* ================= GARIS ================= */
+
+        hr {
+            border: 0;
+            border-top: 1px solid #999;
+            margin: 25px 0 45px;
+        }
+
+        /* ================= JUDUL ================= */
+
+        h1 {
+            font-size: 40px;
+            font-weight: normal;
+            margin-bottom: 45px;
+        }
+
+        /* ================= TABEL ================= */
+
+        table {
+            border-collapse: collapse;
+            width: 310px;
+            background: rgba(255,255,255,0.75);
+            font-size: 20px;
+        }
+
+        th,
+        td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: left;
+            vertical-align: middle;
+            line-height: 1.7;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        .keterangan {
+            font-style: italic;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-bottom: 20px;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* ================= HP ================= */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 94%;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            table {
+                width: 310px;
+                font-size: 20px;
+            }
+
+            nav a {
+                font-size: 17px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= LOGO BAJU ================= -->
+
+    <div class="logo">
+
+        <svg viewBox="0 0 300 300"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Lingkaran Logo -->
+            <circle
+                cx="150"
+                cy="150"
+                r="125"
+                fill="#222"/>
+
+            <!-- Bentuk Baju -->
+            <path
+                d="
+                M105 75
+                L75 95
+                L40 125
+                L70 165
+                L95 145
+                L95 230
+                L205 230
+                L205 145
+                L230 165
+                L260 125
+                L225 95
+                L195 75
+                L175 100
+                L150 110
+                L125 100
+                Z"
+                fill="white"/>
+
+            <!-- Kerah -->
+            <path
+                d="
+                M125 75
+                Q150 105 175 75
+                L165 65
+                Q150 85 135 65
+                Z"
+                fill="#222"/>
+
+            <!-- Desain Baju -->
+            <line
+                x1="115"
+                y1="150"
+                x2="185"
+                y2="150"
+                stroke="#222"
+                stroke-width="8"/>
+
+            <line
+                x1="115"
+                y1="170"
+                x2="185"
+                y2="170"
+                stroke="#222"
+                stroke-width="8"/>
+
+        </svg>
+
+    </div>
+
+
+    <!-- ================= NAVIGASI ================= -->
+
+    <nav>
+
+        <a href="index.html">
+            Beranda
+        </a>
+
+        |
+
+        <a href="jadwal.html">
+            Jadwal Operasional
+        </a>
+
+    </nav>
+
+
+    <!-- GARIS PEMBATAS -->
+
+    <hr>
+
+
+    <!-- ================= JADWAL ================= -->
+
+    <h1>
+        Jam Operasional Toko
+    </h1>
+
+
+    <table>
+
+        <tr>
+            <th>
+                Hari
+            </th>
+
+            <th>
+                Jam<br>
+                Buka
+            </th>
+        </tr>
+
+
+        <tr>
+            <td>
+                Senin -<br>
+                Jumat
+            </td>
+
+            <td>
+                09.00 -<br>
+                22.00
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                Sabtu -<br>
+                Minggu
+            </td>
+
+            <td>
+                10.00 -<br>
+                24.00
+            </td>
+        </tr>
+
+
+        <tr>
+            <td
+                colspan="2"
+                class="keterangan">
+
+                Format waktu dalam<br>
+                WIB
+
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Created by Angga Nuriman @2026
+
+    </footer>
+
+</div>
+
+</body>
+</html>
+ 
+</body>
+
+</html>
